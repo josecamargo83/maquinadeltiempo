@@ -4,38 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes Somos</title>
-    <link rel="stylesheet" href="./proyecto.css">
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
     <!-- Menú de navegación -->
-    <nav>
-        <div class="contenedor menu">
-            <ul class="menulist ul_links">
-                <li>
-                    <img class="logo" src="https://media.istockphoto.com/id/1244097573/fr/vectoriel/casques-ic%C3%B4ne-minimale-avec-des-ondes-sonores.jpg?s=612x612&w=0&k=20&c=SrTnpQ7QiEF-ua1sB-5IsTEbjkEjvWRnpWsS69d4T78=" alt="Logo">
-                </li>
-                <li><a class="link" href="index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a class="link" href="Quienes_somos.html">Quienes Somos</a>
-                    <!-- Submenú de Quienes Somos -->
-                    <ul class="submenu">
-                        <li><a class="link" href="Quienes_somos.html#bienvenido">Bienvenidos</a></li>
-                        <li><a class="link" href="Quienes_somos.html#proposito">Propósito</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="link" href="Nosotros.html">Nosotros</a>
-                    <!-- Submenú de Nosotros -->
-                    <ul class="submenu">
-                        <li><a class="link" href="Nosotros.html#mision">Misión</a></li>
-                        <li><a class="link" href="Nosotros.html#vision">Visión</a></li>
-                    </ul>
-                </li>
-                <li><a class="link" href="Contacto.html">Contacto</a></li>
-                <li><button class="play-button">▶ Play</button></li>
-            </ul>
-        </div>
-    </nav>
+    <header class="cabecer">
+      <nav class="menu">
+        <img class="logo" src="https://media.istockphoto.com/id/1244097573/fr/vectoriel/casques-ic%C3%B4ne-minimale-avec-des-ondes-sonores.jpg?s=612x612&w=0&k=20&c=SrTnpQ7QiEF-ua1sB-5IsTEbjkEjvWRnpWsS69d4T78=" alt="Logo">
+        <label for="menu_resp" class="label_resp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="resp_icono" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </label>
+        <input type="checkbox" id="menu_resp" class="menu_resp">
+        <ul class="ul_links">
+          <li class="il_links"><a class="link" href="index.html">Inicio</a></li>
+          <li class="il_links"><a class="link" href="Nosotros.html">Nosotros</a></li>
+          <li class="il_links"><a class="link" href="Quienes_somos.html">Quienes Somos</a></li>
+          <li class="il_links"><a class="link" href="Contacto.html">Contacto</a></li>
+          <li class="il_links"><button class="play-button">▶ Play</button></li>
+        </ul>
+      </nav>
+    </header>
     
     
     <!-- sección quienes somos bienvenidos-->

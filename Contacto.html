@@ -4,38 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="./proyecto.css">
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
     <!-- Menú de navegación -->
-    <nav>
-        <div class="contenedor menu">
-            <ul class="menulist ul_links">
-                <li>
-                    <img class="logo" src="https://media.istockphoto.com/id/1244097573/fr/vectoriel/casques-ic%C3%B4ne-minimale-avec-des-ondes-sonores.jpg?s=612x612&w=0&k=20&c=SrTnpQ7QiEF-ua1sB-5IsTEbjkEjvWRnpWsS69d4T78=" alt="Logo">
-                </li>
-                <li><a class="link" href="index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a class="link" href="Quienes_somos.html">Quienes Somos</a>
-                    <!-- Submenú de Quienes Somos -->
-                    <ul class="submenu">
-                        <li><a class="link" href="Quienes_somos.html#bienvenido">Bienvenidos</a></li>
-                        <li><a class="link" href="Quienes_somos.html#proposito">Propósito</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="link" href="Nosotros.html">Nosotros</a>
-                    <!-- Submenú de Nosotros -->
-                    <ul class="submenu">
-                        <li><a class="link" href="Nosotros.html#mision">Misión</a></li>
-                        <li><a class="link" href="Nosotros.html#vision">Visión</a></li>
-                    </ul>
-                </li>
-                <li><a class="link" href="Contacto.html">Contacto</a></li>
-                <li><button class="play-button">▶ Play</button></li>
-            </ul>
-        </div>
-    </nav>
+    <header class="cabecer">
+      <nav class="menu">
+        <img class="logo" src="https://media.istockphoto.com/id/1244097573/fr/vectoriel/casques-ic%C3%B4ne-minimale-avec-des-ondes-sonores.jpg?s=612x612&w=0&k=20&c=SrTnpQ7QiEF-ua1sB-5IsTEbjkEjvWRnpWsS69d4T78=" alt="Logo">
+        <label for="menu_resp" class="label_resp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="resp_icono" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </label>
+        <input type="checkbox" id="menu_resp" class="menu_resp">
+        <ul class="ul_links">
+          <li class="il_links"><a class="link" href="index.html">Inicio</a></li>
+          <li class="il_links"><a class="link" href="Nosotros.html">Nosotros</a></li>
+          <li class="il_links"><a class="link" href="Quienes_somos.html">Quienes Somos</a></li>
+          <li class="il_links"><a class="link" href="Contacto.html">Contacto</a></li>
+          <li class="il_links"><button class="play-button">▶ Play</button></li>
+        </ul>
+      </nav>
+    </header>
     
     
 
@@ -51,7 +41,7 @@
 <section class="contacto">
     <h2 class="titulo-contacto">Formulario de contacto</h2>
     <form class="formulario-contacto">
-        <div>
+        <div >
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
         </div>
@@ -65,11 +55,16 @@
         </div>
         <button type="submit">Enviar</button>
     </form>
-    <h2 class="titulo-contacto">Contáctanos</h2>
-        <div class="mapa">
+    
+</section>
+
+<section class="contacto">
+    
+    <h2 class="titulo-contacto">Donde Encontrarnos</h2>
+        <div class="">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.522206947021!2d-74.79636728552245!3d10.99835939075219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4e624a786818d%3A0x88c4489ad0d6c02!2sBarranquilla%2C%20Colombia!5e0!3m2!1ses!2sco!4v1694384166503!5m2!1ses!2sco" 
-                width="600" 
+                width="1200" 
                 height="450" 
                 style="border:0;" 
                 allowfullscreen="" 

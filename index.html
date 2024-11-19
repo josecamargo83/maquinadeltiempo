@@ -4,38 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="./proyecto.css">
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
     <!-- Menú de navegación -->
-    <nav>
-        <div class="contenedor menu">
-            <ul class="menulist ul_links">
-                <li>
-                    <img class="logo" src="https://media.istockphoto.com/id/1244097573/fr/vectoriel/casques-ic%C3%B4ne-minimale-avec-des-ondes-sonores.jpg?s=612x612&w=0&k=20&c=SrTnpQ7QiEF-ua1sB-5IsTEbjkEjvWRnpWsS69d4T78=" alt="Logo">
-                </li>
-                <li><a class="link" href="index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a class="link" href="Quienes_somos.html">Quienes Somos</a>
-                    <!-- Submenú de Quienes Somos -->
-                    <ul class="submenu">
-                        <li><a class="link" href="Quienes_somos.html#bienvenido">Bienvenidos</a></li>
-                        <li><a class="link" href="Quienes_somos.html#proposito">Propósito</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="link" href="Nosotros.html">Nosotros</a>
-                    <!-- Submenú de Nosotros -->
-                    <ul class="submenu">
-                        <li><a class="link" href="Nosotros.html#mision">Misión</a></li>
-                        <li><a class="link" href="Nosotros.html#vision">Visión</a></li>
-                    </ul>
-                </li>
-                <li><a class="link" href="Contacto.html">Contacto</a></li>
-                <li><button class="play-button">▶ Play</button></li>
-            </ul>
-        </div>
-    </nav>
+    <header class="cabecer">
+      <nav class="menu">
+        <img class="logo" src="https://media.istockphoto.com/id/1244097573/fr/vectoriel/casques-ic%C3%B4ne-minimale-avec-des-ondes-sonores.jpg?s=612x612&w=0&k=20&c=SrTnpQ7QiEF-ua1sB-5IsTEbjkEjvWRnpWsS69d4T78=" alt="Logo">
+        <label for="menu_resp" class="label_resp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="resp_icono" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </label>
+        <input type="checkbox" id="menu_resp" class="menu_resp">
+        <ul class="ul_links">
+          <li class="il_links"><a class="link" href="index.html">Inicio</a></li>
+          <li class="il_links"><a class="link" href="Nosotros.html">Nosotros</a></li>
+          <li class="il_links"><a class="link" href="Quienes_somos.html">Quienes Somos</a></li>
+          <li class="il_links"><a class="link" href="Contacto.html">Contacto</a></li>
+          <li class="il_links"><button class="play-button">▶ Play</button></li>
+        </ul>
+      </nav>
+    </header>
+    
     <section>
         <div class="carousel">
             <div class="carousel-inner">
@@ -76,17 +67,17 @@
     </section>
     <section  class="seccion_noticias_videos">
         <h1 class="titulo_noticias_videos">Últimas Noticias</h1>
-        <div  class="contenedor_img ">
-            <div class="imagen1  imagen imagen-con-fondo ">
+        <div  class="columnas">
+            <div class="imagen1  imagen-con-fondo ">
               <img src="https://www.guioteca.com/los-80/files/2016/01/Guns.jpg">
               <p class="colors">Sweet Child o' Mine", lanzada en 1987 fue escrita por Axl Rose, el vocalista de la banda y está inspirada en su entonces novia Erin Everly</p>
             </div>
-            <div class="imagen1 imagen imagen-con-fondo">
+            <div class="imagen1  imagen-con-fondo">
               <img src="https://kioscodelahistoria.com/wp-content/uploads/2023/10/Michael-Jackson-1024x529.jpg">
               <p class="colors">
                 Billie Jean, lanzada en 1982 como parte de Thriller, es una de las canciones más icónicas de Michael Jackson. Su ritmo pegajoso y letra sobre una mujer que afirma que Jackson es el padre de su hijo la hicieron un éxito global. </p>
             </div>
-            <div class="imagen1 imagen imagen-con-fondo">
+            <div class="imagen1  imagen-con-fondo">
               <img src="https://garajedelrock.com/wp-content/uploads/2017/02/soda-stereo.jpg">
               <p class="colors">
                 Una de las canciones más icónicas de Soda Stereo de los años 80 y 90 es "De música ligera". Lanzada en 1990, es uno de los mayores éxitos de la banda y sigue siendo muy popular hasta hoy</p>
@@ -95,7 +86,7 @@
     </section>
     <section id="videos"  class="seccion_noticias_videos">
         <h1 class="titulo_noticias_videos">Videos Recomendados</h1>
-        <div class="contenedor_img ">
+          <div class="columnas ">
             <div class="imagen1   imagen-con-fondo ">
                 <iframe width="190" height="135" src="https://www.youtube.com/embed/0As2spHxQYk?si=33rq4F1Q_zpl8YrD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <p class="colors">Michael Jackson - Smooth Criminal Live - HIStory Tour Munich 1997 HD</p>
@@ -111,6 +102,7 @@
               <p class="colors">
                 Caifanes 1989 La Negra Tomasa En Vivo</p>
             </div>
+          </div>
     </section>
 <script>
     const carouselInner = document.querySelector('.carousel-inner');
