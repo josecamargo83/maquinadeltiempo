@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./proyecto.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="contenedor menu">
+            <ul class="menulist ul_links">
+                <li>
+                    <img class="logo" src="https://media.istockphoto.com/id/1244097573/fr/vectoriel/casques-ic%C3%B4ne-minimale-avec-des-ondes-sonores.jpg?s=612x612&w=0&k=20&c=SrTnpQ7QiEF-ua1sB-5IsTEbjkEjvWRnpWsS69d4T78=" alt="Logo">
+                </li>
+                <li><a class="link" href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="link" href="Quienes_somos.html">Quienes Somos</a>
+                    <!-- Submenú de Quienes Somos -->
+                    <ul class="submenu">
+                        <li><a class="link" href="Quienes_somos.html#bienvenido">Bienvenidos</a></li>
+                        <li><a class="link" href="Quienes_somos.html#proposito">Propósito</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="link" href="Nosotros.html">Nosotros</a>
+                    <!-- Submenú de Nosotros -->
+                    <ul class="submenu">
+                        <li><a class="link" href="Nosotros.html#mision">Misión</a></li>
+                        <li><a class="link" href="Nosotros.html#vision">Visión</a></li>
+                    </ul>
+                </li>
+                <li><a class="link" href="Contacto.html">Contacto</a></li>
+                <li><button class="play-button">▶ Play</button></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+
+    <!-- Nueva sección con imagen de fondo y título centrado -->
+    <section class="hero">
+        <div class="hero-content animacion">
+            <h1>Contáctanos</h1>
+            
+        </div>
+    </section>
+
+   <!-- Sección de contacto -->
+<section class="contacto">
+    <h2 class="titulo-contacto">Formulario de contacto</h2>
+    <form class="formulario-contacto">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <h2 class="titulo-contacto">Contáctanos</h2>
+        <div class="mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.522206947021!2d-74.79636728552245!3d10.99835939075219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4e624a786818d%3A0x88c4489ad0d6c02!2sBarranquilla%2C%20Colombia!5e0!3m2!1ses!2sco!4v1694384166503!5m2!1ses!2sco" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+</section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- Sección de "Síguenos" -->
+            <div class="social-section">
+                <h3>SÍGUENOS</h3>
+                <hr>
+                <div class="social-icons">
+                    <a href="#" target="_blank">
+                        <img src="https://s.widget-club.com/samples/aIdkSyXiunfsNZUT4p0Dp3M3lEF2/FI3N4EInBcr4RsBGKImj/6DACE430-402F-4E7A-A706-A430FC4FCB32.jpg?q=70" alt="Facebook" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://i.pinimg.com/736x/5b/73/45/5b73459960abeab3bd7be40fdc2fd6c3.jpg" alt="Twitter" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://img.freepik.com/vector-premium/icono-instagram_1003347-456.jpg?semt=ais_hybrid" alt="Instagram" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://i.pinimg.com/236x/7c/2a/44/7c2a440b0e68d5d7d319e82641f093cb.jpg" alt="Pinterest" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://i.pinimg.com/564x/80/41/ac/8041ac172981a3a546b6739eab1d77d8.jpg" alt="YouTube" />
+                    </a>
+                </div>
+            </div>
+            <!-- Sección de Copyright -->
+            <div class="copyright">
+                <p>
+                    <a href="#" target="_blank">La Maquina del tiempo</a> &copy;- Copyright 2024, Diseñado por José Luis Camargo y Julian Andres Venegas.
+                </p>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>
